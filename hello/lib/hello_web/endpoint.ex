@@ -42,5 +42,7 @@ defmodule HelloWeb.Endpoint do
     key: "_hello_key",
     signing_salt: "UQKy1pxq"
 
+  plug CORSPlug
+
   plug HelloWeb.Router
 end
