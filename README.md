@@ -1,4 +1,4 @@
-# A Server-Side App with Client-Side Rendering (GraphQL-Phoenix-Vue-Apollo)
+## A Server-Side App with Client-Side Rendering (GraphQL-Phoenix-Vue-Apollo)
 
 ### Steps to generate a simple working application:
 
@@ -27,15 +27,19 @@ end
 (Optional) Install Dataloader if necessary for your project:\
 https://github.com/absinthe-graphql/dataloader
 
-To integrate Vue with Phoenix, we would have to use the CORS plug:\
-https://github.com/mschae/cors_plug, and make sure that the plug is implemented through one of the recommended steps (in my case I put it in the endpoint.ex file.
+---
 
+To integrate Vue with Phoenix, we would have to use the CORS plug:\
+https://github.com/mschae/cors_plug, and make sure that the plug is implemented through one of the recommended steps (in my case I put it in the endpoint.ex file).
+
+\
 The Vue app would reside in the assets folder, replacing all the contents that were originally there.
 The recommended way to install Vue is through the node package manager (npm).
 ```
 $ npm install vue
 ```
 
+\
 Vue CLI is also recommended if you want templates that are ready to go:\
 https://cli.vuejs.org/guide/installation.html
 
@@ -43,7 +47,7 @@ Then create a Vue application in the assets folder using Vue CLI:
 ```
 $ npx @vue/cli create assets
 ```
-
+\
 Depending on your project requirements, you can either select the default configuration or add more features:\
 ![Taken from https://cli.vuejs.org/guide/creating-a-project.html#vue-create](https://cli.vuejs.org/cli-select-features.png)
 
@@ -68,6 +72,8 @@ $ vue add apollo
 or by manual installation:\
 https://vue-apollo.netlify.com/guide/installation.html
 
+
+\
 Configure the httpEndpoint in vue-apollo.js to match the route to the GraphQL server in Phoenix:
 ```
 const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'http://localhost:4000/api/gql'
@@ -78,7 +84,8 @@ When running the Vue app with the Pheonix server, the websocket handshake might 
 const defaultOptions = {
   wsEndpoint: process.env.VUE_APP_GRAPHQL_WS
 ```
-  
+
+\  
 Then run the Phoenix server in the development environment to see if things work:
 ```
 $ cd my-project
