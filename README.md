@@ -1,6 +1,9 @@
 ## A Server-Side App with Client-Side Rendering (GraphQL-Phoenix-Vue-Apollo)
 
 ### Steps to generate a simple working application:
+---
+
+## GraphQL-Phoenix
 
 First install Elixir:\
 https://elixir-lang.org/install.html
@@ -28,6 +31,7 @@ end
 https://github.com/absinthe-graphql/dataloader
 
 ---
+## Vue-Apollo
 
 To integrate Vue with Phoenix, we would have to use the CORS plug:\
 https://github.com/mschae/cors_plug, and make sure that the plug is implemented through one of the recommended steps (in my case I put it in the endpoint.ex file).
@@ -85,7 +89,7 @@ const defaultOptions = {
   wsEndpoint: process.env.VUE_APP_GRAPHQL_WS
 ```
 
-\  
+\
 Then run the Phoenix server in the development environment to see if things work:
 ```
 $ cd my-project
