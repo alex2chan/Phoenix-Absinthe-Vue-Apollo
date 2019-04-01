@@ -86,6 +86,7 @@ const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'http://localhost:4000/
 When running the Vue app with the Pheonix server, the websocket handshake might fail. In that case, use the default process in the defaultOptions:
 ```
 const defaultOptions = {
+  // wsEndpoint: process.env.VUE_APP_GRAPHQL_WS || 'ws://localhost:4000/api/gql'
   wsEndpoint: process.env.VUE_APP_GRAPHQL_WS
 ```
 
