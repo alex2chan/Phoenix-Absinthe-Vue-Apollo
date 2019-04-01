@@ -2,13 +2,13 @@
 
 ### Steps to generate a simple working application:
 
-First install Elixir:
+First install Elixir:\
 https://elixir-lang.org/install.html
 
-Then install Phoenix and Node.js:
+Then install Phoenix and Node.js:\
 https://hexdocs.pm/phoenix/up_and_running.html
 
-Once an application in Phoenix is up and running, install the absinthe packages required to implement GraphQL:
+Once an application in Phoenix is up and running, install the absinthe packages required to implement GraphQL:\
 https://github.com/absinthe-graphql/absinthe
 
 and make sure that the router is configured through an api that accepts json:
@@ -24,10 +24,10 @@ scope "/api" do
 end
 ```
 
-(Optional) Install Dataloader if necessary for your project:
+(Optional) Install Dataloader if necessary for your project:\
 https://github.com/absinthe-graphql/dataloader
 
-To integrate Vue with Phoenix, we would have to use the CORS plug:
+To integrate Vue with Phoenix, we would have to use the CORS plug:\
 https://github.com/mschae/cors_plug, and make sure that the plug is implemented through one of the recommended steps (in my case I put it in the endpoint.ex file.
 
 The Vue app would reside in the assets folder, replacing all the contents that were originally there.
@@ -36,7 +36,7 @@ The recommended way to install Vue is through the node package manager (npm).
 npm install vue
 ```
 
-Vue CLI is also recommended if you want templates that are ready to go:
+Vue CLI is also recommended if you want templates that are ready to go:\
 https://cli.vuejs.org/guide/installation.html
 
 Then create a Vue application in the assets folder using Vue CLI:
@@ -44,7 +44,7 @@ Then create a Vue application in the assets folder using Vue CLI:
 npx @vue/cli create assets
 ```
 
-Depending on your project requirements, you can either select the default configuration or add more features.
+Depending on your project requirements, you can either select the default configuration or add more features:\
 ![Taken from https://cli.vuejs.org/guide/creating-a-project.html#vue-create](https://cli.vuejs.org/cli-select-features.png)
 
 If you are using a Runtime + Compiler, make sure that you create a vue.config.js file with runtimeCompiler set to true:
@@ -65,7 +65,7 @@ cd assets
 ```
 vue add apollo
 ```
-or by manual installation:
+or by manual installation:\
 https://vue-apollo.netlify.com/guide/installation.html
 
 Configure the httpEndpoint in vue-apollo.js to match the route to the GraphQL server in Phoenix:
