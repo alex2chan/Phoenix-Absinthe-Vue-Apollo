@@ -54,6 +54,7 @@ $ npx @vue/cli create assets
 \
 Depending on your project requirements, you can either select the default configuration or add more features:\
 ![Taken from https://cli.vuejs.org/guide/creating-a-project.html#vue-create](https://cli.vuejs.org/cli-select-features.png)
+More details can be found in: https://cli.vuejs.org/guide/creating-a-project.html
 
 If you are using a Runtime + Compiler, make sure that you create a vue.config.js file with runtimeCompiler set to true:
 ```
