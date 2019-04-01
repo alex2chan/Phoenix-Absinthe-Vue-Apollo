@@ -83,7 +83,7 @@ Configure the httpEndpoint in vue-apollo.js to match the route to the GraphQL se
 const httpEndpoint = process.env.VUE_APP_GRAPHQL_HTTP || 'http://localhost:4000/api/gql'
 ```
 
-When running the Vue app with the Pheonix server, the websocket handshake might fail. In that case, use the default process in the defaultOptions:
+When running the Vue app with the Pheonix server, the WebSocket handshake might fail. In that case, use the default process in the defaultOptions:
 ```
 const defaultOptions = {
   // wsEndpoint: process.env.VUE_APP_GRAPHQL_WS || 'ws://localhost:4000/api/gql'
@@ -107,4 +107,4 @@ $ cd assets
 $ npm run serve
 ```
 
-I hope that should work.
+And that should work.
